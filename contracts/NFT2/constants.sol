@@ -1,0 +1,13 @@
+
+// SPDX-License-Identifier: SEE LICENSE IN LICENSE
+pragma solidity 0.8.9;
+
+bytes20 constant DNFT_NAMESPACE_NULL = bytes20(0x0000000000000000000000000000000000000000);
+
+// bytes20(namespace) + type + bytes4(keccak256(tokenURI)) + ...
+bytes32 constant DNFT_METADATA_KEY = 0x00000000000000000000000000000000000000007d2a78230000000000000000;
+
+
+bytes32 constant DERIVATIVE_NFT_BURN_EVENT = bytes32(
+    keccak256("DERIVATIVE_NFT_BURN_EVENT")
+);
